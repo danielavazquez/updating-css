@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+//We are declaring CSS variables on root similar to declaring on html element
+:root {
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+//when you want to use a variable in css you use var and the standard is --
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
+
+.h1 {
+    color: var(--base);
+}
+
+//misc styles nothing to do with CSS Variables
+
+body {
+    text-align: center;
+    background: #193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.controls {
+
+    margin-bottom: 50px;
+}
+
+input {
+    width: 100px;
+}
